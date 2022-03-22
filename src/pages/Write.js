@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import "../index.css";
-import axios from "axios";
+import axios from "../axios";
 import { Context } from "../context/Context";
 import { Navigate } from "react-router-dom";
 
@@ -16,8 +16,8 @@ export default function Write() {
       setPosts(res.data);
     };
     fetchPosts();
-    console.log(hello);
-  }, [posts]);
+    console.log("hello");
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
