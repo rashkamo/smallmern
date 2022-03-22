@@ -1,6 +1,5 @@
 import Write from "./pages/Write";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useContext } from "react";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import TopBar from "./components/Topbar";
