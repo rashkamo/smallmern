@@ -1,13 +1,254 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.register {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.registerLoginButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: lightcoral;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+}
+
+.loginTitle {
+  font-size: 50px;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.loginRegisterButton {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: teal;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.write {
+  padding-top: 50px;
+}
+
+.writeImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.writeForm {
+  position: relative;
+}
+
+.writeFormGroup {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.writeIcon {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: rgb(129, 125, 125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+
+.writeInput::placeholder {
+  color: rgb(189, 185, 185);
+  font-weight: 400;
+}
+
+.writeInput:focus {
+  outline-style: none;
+}
+
+.writeText {
+  width: 70vw;
+  height: 100vh;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.top {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topSearchIcon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
 }
